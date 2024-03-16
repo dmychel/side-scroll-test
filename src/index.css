@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-image: url('/assets/background.png');
+  height: 100vh;
+  width: 100%;
+}
+
+.sprite {
+  bottom: 5%;
+  left: 50%;
+  position: absolute;
+  display: flex;
+  justify-self: flex-end;
+  border: 1px solid;
+}
