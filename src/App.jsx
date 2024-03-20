@@ -14,11 +14,26 @@ function App() {
     if (direction === true) {
       const newEl = elementArr[index + 1];
       setElement(newEl);
-      console.log(newEl);
+      animate(true);
     } else {
       const newEl = elementArr[index - 1];
       setElement(newEl);
-      console.log(newEl);
+      animate(false);
+    }
+  }
+
+  function animate(direction) {
+    const sprite = document.getElementById("sprite");
+    if (direction === true) {
+      sprite.classList.add("slide_left");
+      setTimeout(() => {
+        sprite.classList.remove("slide_left");
+      }, "1500");
+    } else {
+      sprite.classList.add("slide_right");
+      setTimeout(() => {
+        sprite.classList.remove("slide_right");
+      }, "1500");
     }
   }
 
@@ -30,7 +45,7 @@ function App() {
       </nav>
 
       <div className="sprite_container">
-        <img src="/assets/karatecat.png" className="sprite" />
+        <img src="/assets/karatecat.png" className="sprite" id="sprite" />
         <span className="path"></span>
       </div>
 
