@@ -29,19 +29,9 @@ section {
   justify-content: center;
   align-items: center;
   transition: ease 1s;
+  background-image: url('/assets/background.png');
 }
 
-.yellow {
-  background-color: yellow;
-}
-
-.red {
-  background-color: red;
-}
-
-.orange {
-  background-color: orange;
-}
 
 .sprite-container {
   bottom: 5%;
