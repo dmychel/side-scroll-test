@@ -3,20 +3,11 @@
   padding: 0;
 }
 
-html {
-  scroll-snap-type: x mandatory;
-  overflow: hidden;
-}
-
 .app {
   display: flex;
   background-image: url("/assets/background.png");
   height: 100vh;
   width: 100vw;
-}
-
-section {
-  scroll-snap-align: start;
 }
 
 .yellow,
@@ -25,10 +16,33 @@ section {
   height: 100vh;
   min-width: 100vw;
   display: flex;
-  justify-content: center;
   align-items: center;
   transition: ease 1s;
   background-image: url("/assets/background.png");
+}
+
+.yellow {
+  justify-content: center;
+}
+
+.tree {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+}
+
+.tree_2 {
+  position: absolute;
+  bottom: 1%;
+  left: 0;
+}
+
+.orange {
+  justify-content: space-around;
+}
+
+.red {
+  justify-content: right;
 }
 
 .nav_container {
@@ -84,8 +98,8 @@ section {
 
 @keyframes slideInLeft {
   from {
-    transform: translateX(-500%);
-    opacity: 0.25;
+    transform: translateX(-600%);
+    opacity: 0.1;
   }
 
   to {
@@ -96,8 +110,8 @@ section {
 
 @keyframes slideInRight {
   from {
-    transform: translateX(500%);
-    opacity: 0.25;
+    transform: translateX(600%);
+    opacity: 0.1;
   }
 
   to {
