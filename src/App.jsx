@@ -50,15 +50,19 @@ function App() {
       </div>
 
       <section className="yellow" id="yellow">
-        <h1>Left</h1>
+        <img src="/assets/tree.png" />
+        <img src="/assets/tree.png" className="tree" />
+        <img src="/assets/tree.png" className="tree_2" />
       </section>
 
       <section className="orange" id="orange">
-        <h1>Middle</h1>
+        <img src="/assets/tree.png" alt="" />
+        <img src="/assets/house.png" alt="" />
+        <img src="/assets/tree.png" alt="" />
       </section>
 
       <section className="red" id="red">
-        <h1>Right</h1>
+        <img src="/assets/house.png" alt="" />
       </section>
     </div>
   );
