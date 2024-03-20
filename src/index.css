@@ -63,6 +63,10 @@ section {
   height: auto;
 }
 
+.hide {
+  opacity: 0;
+}
+
 .path {
   background-color: rgba(165, 42, 42, 0.685);
   padding: 1em;
@@ -70,22 +74,34 @@ section {
   width: 100%;
 }
 
+.slide_left {
+  animation: slideInLeft 1.5s ease-in-out;
+}
+
+.slide_right {
+  animation: slideInRight 1.5s ease-in-out;
+}
+
 @keyframes slideInLeft {
   from {
     transform: translateX(-500%);
+    opacity: 0.25;
   }
 
   to {
     transform: translateY(0%);
+    opacity: 1;
   }
 }
 
 @keyframes slideInRight {
   from {
     transform: translateX(500%);
+    opacity: 0.25;
   }
 
   to {
     transform: translateY(0%);
+    opacity: 1;
   }
 }
